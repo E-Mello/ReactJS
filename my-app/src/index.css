@@ -1,0 +1,65 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.432);
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(119, 105, 105);
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  color: white;
+}
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 67.5vw;
+  height: 45vh;
+}
+
+.game-info {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.game-info li {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.game-info button{
+  background: rgba(236, 234, 234, 0.151);
+  border: 3px outset rgba(255, 255, 255, 0.466);
+}
