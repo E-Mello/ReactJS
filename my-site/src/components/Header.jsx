@@ -26,17 +26,17 @@ export function Header() {
     //     scroll.scrollMore(100);
     // }
     
-    let stars = document.getElementById('stars');
-    let moon = document.getElementById('moon');
-    let mountainsB = document.getElementById('mountainsB');
-    let text = document.getElementById('text');
-    let btn = document.getElementById('btn');
-    let mountainsF = document.getElementById('mountainsF');
-    let header = document.querySelector('header');
+    const stars = document.getElementById('stars');
+    const moon = document.getElementById('moon');
+    const mountainsB = document.getElementById('mountainsB');
+    const text = document.getElementById('text');
+    const btn = document.getElementById('btn');
+    const mountainsF = document.getElementById('mountainsF');
+    const header = document.querySelector('header');
 
+    window.addEventListener('scroll', () => {
+        const value = window.scrollY;
 
-    window.addEventListener('scroll', function(){
-        let value = window.scrollY;
         stars.style.left = value * 0.05 + 'rem';
         moon.style.top = value * 0.04 + 'rem';
         mountainsB.style.top = value * 0.05 + 'rem';
@@ -45,8 +45,35 @@ export function Header() {
         text.style.marginTop = value * 0.02 + 'rem';
         btn.style.marginTop = value * 0.06 + 'rem';
         header.style.top = value * 0.05 + 'rem';
-    });
 
+    })
+
+    // window.addEventListener('scroll', () => {
+    //     const value = window.scrollY;
+
+    //     stars = value;
+    //     stars.style.left = value * 0.05 + 'rem';
+    //     moon.style.top = value * 0.04 + 'rem';
+    //     mountainsB.style.top = value * 0.05 + 'rem';
+    //     mountainsF.style.top = value * 0 + 'rem';
+    //     text.style.marginRight = value * 0.15 + 'rem';
+    //     text.style.marginTop = value * 0.02 + 'rem';
+    //     btn.style.marginTop = value * 0.06 + 'rem';
+    //     header.style.top = value * 0.05 + 'rem';
+    // })
+
+    // async function getStringSize(searchString) {
+    //     return searchString.length;
+    // }
+
+    // txtInput.addEventListener("keyup", async e => {
+    //     const searchString = e.target.value;
+    //     total_length = await getStringSize(searchString);
+    //     if (total_length > 3) {
+
+    //         console.log(searchString);
+    //     }
+    // }, false);
 
 
     return (
