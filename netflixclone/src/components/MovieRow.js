@@ -1,7 +1,7 @@
 import React from 'react';
 import './MovieRow.css';
-import {NavigateBeforeIcon} from '@mui/icons-material';
-import {NavigateNextIcon} from '@mui/icons-material';
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 export default ({title, items}) => {
     return (
