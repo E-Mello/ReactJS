@@ -8,8 +8,11 @@ export default ({title, items}) => {
         <div>
             <div className="movie-row">
                 <h2>{title}</h2>
-                <div className="">
-
+                <div className="movieRow--left">
+                    <NavigateBeforeIcon style={{fontSize: 50}} />
+                </div>
+                <div className="movieRow--right">
+                    <NavigateNextIcon style={{fontSize: 50}} />
                 </div>
             </div>
 
