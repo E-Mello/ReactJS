@@ -53,6 +53,7 @@
     right: 0;
 }
 
-.movieRow:hover .movieRow--right {
+.movieRow--right:hover,
+.movieRow--left:hover {
     opacity: 1;
 }
