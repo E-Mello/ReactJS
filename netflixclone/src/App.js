@@ -61,6 +61,12 @@ export default () => {
             Direitos de imagem para Netflix<br/>
             Dados pego do site Themoviedb.org<br/>
         </footer>
+
+        {movieList.length <= 0 &&
+         <div className="loading">
+            <img src="https://i.pinimg.com/originals/9a/02/aa/9a02aac51ed499e01518ac73dd954eb1.gif" alt="Loading" />
+        </div>
+        }   
     </div>
   );
 }
