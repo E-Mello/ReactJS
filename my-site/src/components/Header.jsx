@@ -35,7 +35,19 @@ export function Header() {
     })
 
 });
+    /*  
+    const clip = document.querySelector('.clip');
+    for (let i  = 0; i < clip.length; i++) {
+        clip[i].addEventListener('mouseenter', function(e){
+            clip[i].play()
+        })
+        clip[i].addEventListener('mouseout', function(e){
+            clip[i].pause()
+        })
+    }
 
+    */
+    
     return (
         <div>
         <header className={styles.header}>
@@ -138,17 +150,32 @@ export function Header() {
 
         <section className={styles.section02}>
 
-            <div className={styles.header}>
-                <h1>Image Grid</h1>
-                <p>Click on the buttons to change the grid view.</p>
+            <div className={styles.photoGridHeader}>
+                <h1 className={styles.photoGridH1}>Image Grid</h1>
+                <p className={styles.photoGridP}>I'm the grid imagem</p>
             </div>
 
             {/* Photo Grid */}
-            <div className={styles.row}>
-                <div className={styles.column}>
-                    teste
+            <div className={styles.photoGrid} >
+                    <div className={styles.photoGridList} >
+                        <div className={styles.photoGridItem}>
+                            <tr>
+                                <td><img src="../public/love-heart-dark.jpg"/></td>
+                                <td><img src="../public/space.jpg"/></td>
+                                <td><img src="../public/space.jpg"/></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><video src="../public/Darling.mp4" loop className="clip"></video></td>
+                            </tr>    
+                            <tr>
+                                <td><img src="../public/woman-face-light.jpg"/></td>
+                                <td><img src="../public/woman-face-light.jpg"/></td>
+                                <td><img src="../public/woman-face-light.jpg"/></td>
+                            </tr>                      
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <footer className={styles.footer}>
