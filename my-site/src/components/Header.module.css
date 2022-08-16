@@ -125,41 +125,6 @@ header ul li a.active {
     color: #fff;
 }
 
-.section02 {
-    box-sizing: border-box;
-    text-align: center;
-    background: #1c0522;
-}
-
-.photoGridHeader {
-    color: white;
-}
-
-.photoGridList {
-    width: 100%;
-    display: table;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
-
-.photoGridItem {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.photoGridItem img, .photoGridItem video {
-    width: 100%;
-    transform: scale(0.6);
-    transition: all ease 0.2s;
-    border: 3px solid white;
-}
-
-.photoGridItem img:hover, .photoGridItem video:hover {
-    transform: scale(1);
-}
-
 .footer {
 
 }

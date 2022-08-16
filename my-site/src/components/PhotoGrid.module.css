@@ -1,0 +1,43 @@
+.section02 {
+    box-sizing: border-box;
+    text-align: center;
+    background: #1c0522;
+}
+
+.photoGridHeader {
+    color: white;
+}
+
+.photoGrid {
+    box-sizing: border-box;
+    display: inline-block;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    text-align: start;
+}
+
+.photoGridList {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+    display: inline-flex;
+}
+
+.photoGridItem {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.photoGridItem img, .photoGridItem video {
+    width: 30rem;
+    transform: scale(0.6);
+    transition: all ease 0.2s;
+    border: 3px solid white;
+    display: inline-flex;
+}
+
+.photoGridItem img:hover, .photoGridItem video:hover {
+    transform: scale(0.8);
+}
