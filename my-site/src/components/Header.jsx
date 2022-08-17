@@ -1,5 +1,6 @@
 import React from 'react';
 import {PhotoGrid} from './PhotoGrid';
+import { Footer } from './Footer';
 import {useRef, useEffect} from 'react';
 import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -132,14 +133,9 @@ export function Header() {
                 cupiditate beatae fugit rem odio.
                 <br></br><br></br>
             </p>
-            
-            <br></br><br></br>
-            <br></br><br></br>
         </div>
         <PhotoGrid />
-        <footer className={styles.footer}>
-
-        </footer>
+        <Footer />
         </div>
     );
 }

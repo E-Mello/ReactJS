@@ -10,8 +10,7 @@
 
 .photoGrid {
     box-sizing: border-box;
-    display: inline-block;
-    flex-wrap: nowrap;
+    display: contents;
     margin: 0 auto;
     width: 100%;
     padding: 0;
@@ -19,7 +18,6 @@
 }
 
 .photoGridList {
-    flex-wrap: nowrap;
     justify-content: space-between;
     overflow-x: hidden;
     display: inline-flex;
@@ -31,13 +29,26 @@
 }
 
 .photoGridItem img, .photoGridItem video {
-    width: 30rem;
+    width: 40rem;
     transform: scale(0.6);
     transition: all ease 0.2s;
     border: 3px solid white;
-    display: inline-flex;
+    display: inline-block;
 }
 
 .photoGridItem img:hover, .photoGridItem video:hover {
-    transform: scale(0.8);
+    transform: scale(1);
+}
+
+.section02::before {
+    content: '';
+    position: relative;
+    bottom: -28rem;
+    width: 100%;
+    height: 5.25rem;
+    background: linear-gradient(to top, #130318, transparent);
+    z-index: 1000;
+    left: 0;
+    overflow: hidden;
+    display: flex;
 }
