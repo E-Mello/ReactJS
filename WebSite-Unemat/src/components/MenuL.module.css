@@ -1,0 +1,26 @@
+
+
+.MenuLButton {
+    background: var(--gray-800);
+    border: none;
+    left: 0;
+    position: fixed;
+}
+
+ .content:hover{
+    width: 25rem;
+    background: red;
+    z-index: 1;
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 1rem;
+    background: red;
+    transition: all 0.7s;
+    z-index: 1;
+}
+

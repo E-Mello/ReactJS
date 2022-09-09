@@ -1,4 +1,4 @@
-import { Sidebar } from 'phosphor-react';
+import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { Post } from './Post';
 
