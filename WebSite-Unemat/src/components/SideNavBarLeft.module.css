@@ -1,0 +1,13 @@
+.sideMenu {
+    position: fixed;
+    background: var(--gray-700);
+    width: 18.75rem;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1.875rem 1.25rem;
+}
+
+.BsFillArrowLeftSquareFill {
+    /* color: var(--gray-400); */
+    display: inline-block;
+}

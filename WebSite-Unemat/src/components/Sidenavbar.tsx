@@ -1,26 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Avatar } from "./Avatar";
 
 import styles from './Sidenavbar.module.css';
 
 export function Sidenavbar() {
+    const [isActive, setActive] = useState(false);
+
+    function showOrCloseNav() {
+        setActive(!isActive);
+    }
+
+    function handleTitle() {
+
+    }
 
     window.addEventListener('load', () => {
 
         const btn = document.getElementById('btn');
         const sidebar = document.getElementById('sidebar');
         const searchBtn = document.getElementById('bx-search');
-
-        window.addEventListener('onClick', () => {
-            btn?.classList.toggle('active', true);
-        })
-        window.addEventListener('Click', () => {
-            sidebar?.classList.toggle('active');
-        })
-        window.addEventListener('onClick', () => {
-            searchBtn?.classList.toggle('active');
-        })
-
     });
 
     return (
@@ -31,7 +29,7 @@ export function Sidenavbar() {
                         <i className='bx bxl-c-plus-plus'></i>
                         <div className={styles.logo_name}>CodingLab</div>
                     </div>
-                    <i className='bx bx-menu btn' title="menu" id="btn"></i>
+                    <i className='bx bx-menu btn' onClick={showOrCloseNav} title="menu" id="btn"></i>
                 </div>
                 <ul className={styles.nav_list}>
                     <li>
