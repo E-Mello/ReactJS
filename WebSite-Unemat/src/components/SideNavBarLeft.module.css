@@ -7,7 +7,14 @@
     padding: 1.875rem 1.25rem;
 }
 
-.BsFillArrowLeftSquareFill {
-    /* color: var(--gray-400); */
-    display: inline-block;
+.topSection {
+    position: relative;
+}
+
+.toggleMenuBtn {
+    color: var(--gray-400); 
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }

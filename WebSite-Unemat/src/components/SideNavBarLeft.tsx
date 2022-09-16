@@ -1,11 +1,12 @@
 import { Avatar } from "./Avatar";
 import { LogoUnemat } from "./LogoUnemat";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from './SideNavBarLeft.module.css'
 
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 export function SideNavBarLeft() {
@@ -17,7 +18,7 @@ export function SideNavBarLeft() {
                         <LogoUnemat src="../src/assets/LogoUnemat.png" />
                     </div>
                     <div className={styles.toggleMenuBtn}>
-                        <FontAwesomeIcon icon={fa.instagram} />
+                        <BsFillArrowLeftSquareFill className={styles.arrowLeft} size={20} />
                     </div>
                 </div>
             </div>
