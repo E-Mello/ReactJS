@@ -1,10 +1,21 @@
-.sideMenu {
+.sideMenuActive {
     position: fixed;
     background: var(--gray-700);
     width: 18.75rem;
     height: 100%;
     box-sizing: border-box;
     padding: 1.875rem 1.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.sideMenuInactive {
+    position: fixed;
+    background: var(--gray-700);
+    width: 10rem;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1.875rem 1.25rem;
+    transition: all 0.3s ease-in;
 }
 
 .topSection {
@@ -15,9 +26,20 @@
     color: var(--gray-400); 
     position: absolute;
     top: 50%;
-    right: 0rem;
+    right: -1.25rem;
     transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
 }
+
+.sideMenuInactive .toggleMenuBtn {
+    color: var(--gray-400); 
+    position: absolute;
+    top: 50%;
+    right: -1.2rem;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in;
+}
+
 
 .searchController {
     color: #fff;
