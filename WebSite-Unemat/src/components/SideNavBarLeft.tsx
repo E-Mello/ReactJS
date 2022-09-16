@@ -1,11 +1,10 @@
 import { Avatar } from "./Avatar";
 import { LogoUnemat } from "./LogoUnemat";
-import { BsFillArrowLeftSquareFill } from "react-icons/bs";
+import { BsFillArrowLeftSquareFill, BsSearch } from "react-icons/bs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from './SideNavBarLeft.module.css'
 
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -20,6 +19,18 @@ export function SideNavBarLeft() {
                     <div className={styles.toggleMenuBtn}>
                         <BsFillArrowLeftSquareFill className={styles.arrowLeft} size={20} />
                     </div>
+                </div>
+
+                <div className={styles.searchController}>
+                    <button className={styles.searchBtn}>
+                        <BsSearch className={styles.searchController} />
+                    </button>
+
+                    <input type="text" placeholder="search" />
+                </div>
+
+                <div className={styles.divider}>
+
                 </div>
             </div>
         </>
