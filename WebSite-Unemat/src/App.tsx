@@ -3,7 +3,6 @@ import { Forum } from './components/Forum';
 import { Header } from './components/Header';
 import { HomePage } from './components/HomePage';
 import { Footer } from './components/Footer';
-import { Sidenavbar } from './components/Sidenavbar';
 import { SideNavBarLeft } from './components/SideNavBarLeft';
 
 import './global.css'
@@ -19,10 +18,10 @@ export function App() {
     <>
       <SideNavBarLeft />
       {/* <Sidenavbar /> */}
-      {/*<Header />*/}
-      {/*<HomePage />*/}
+      {/* <Header /> */}
+      {/* <HomePage /> */}
       {/*<Forum />*/}
-      {/*<Footer />*/}
+      {/* <Footer /> */}
     </>
   )
 }
