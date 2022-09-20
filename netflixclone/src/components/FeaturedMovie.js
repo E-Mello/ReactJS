@@ -1,16 +1,16 @@
 import React from 'react';
 import './FeatureMovie.css';
 
-export default ({item}) => {
-    
+export default ({ item }) => {
+
     let firstDate = new Date(item.first_air_date);
     let genres = [];
-    for(let i in item.genres) {
+    for (let i in item.genres) {
         genres.push(item.genres[i].name);
     }
 
     let description = item.overview;
-    if(description.length > 200) {
+    if (description.length > 200) {
         description = description.substring(0, 200) + '...';
     }
 
@@ -35,7 +35,7 @@ export default ({item}) => {
                     </div>
                     <div className="featured--genres"><strong>Genres:</strong> {genres.join(', ')}</div>
                 </div>
-            </div>            
+            </div>
         </section>
     )
 }

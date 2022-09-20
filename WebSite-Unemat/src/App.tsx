@@ -16,7 +16,7 @@ import styles from './App.module.css'
 export function App() {
   return (
     <>
-      <SideNavBarLeft />
+      {<SideNavBarLeft />}
       {/* <Sidenavbar /> */}
       {/* <Header /> */}
       {/* <HomePage /> */}
