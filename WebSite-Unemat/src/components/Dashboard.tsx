@@ -1,7 +1,7 @@
 import styles from './HomePage.module.css'
 
 
-export function HomePage() {
+export function Dashboard() {
     return (
         <>
             <main className={styles.mainContent}>

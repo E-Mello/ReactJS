@@ -54,23 +54,16 @@ export function SideNavBarLeft() {
                         <li>
                             <a href="#">
                                 <i><MdSchool /></i>
-                                <span className={styles.linksName}>Grade do Curso</span>
+                                <span className={styles.linksName}>TCC's Feitos</span>
                             </a>
-                            <span className={styles.tooltip} >Grade do Curso</span>
+                            <span className={styles.tooltip} >TCC's Feitos</span>
                         </li>
                         <li>
                             <a href="#">
                                 <i><BsJournalBookmarkFill /></i>
-                                <span className={styles.linksName}>Minhas Materias</span>
+                                <span className={styles.linksName}>Projetos</span>
                             </a>
-                            <span className={styles.tooltip} >Minhas Materias</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i><BiChat /></i>
-                                <span className={styles.linksName}>Chat</span>
-                            </a>
-                            <span className={styles.tooltip} >Chat</span>
+                            <span className={styles.tooltip} >Projetos</span>
                         </li>
                         <li>
                             <a href="#">
@@ -82,23 +75,16 @@ export function SideNavBarLeft() {
                         <li>
                             <a href="#">
                                 <i><BsFillBookmarkHeartFill /></i>
-                                <span className={styles.linksName}>Amigos</span>
+                                <span className={styles.linksName}>Mídias</span>
                             </a>
-                            <span className={styles.tooltip} >Amigos</span>
+                            <span className={styles.tooltip} >Mídias</span>
                         </li>
                         <li>
                             <a href="#">
                                 <i><BiUser /></i>
-                                <span className={styles.linksName}>Usuario</span>
+                                <span className={styles.linksName}>Canais Discord</span>
                             </a>
-                            <span className={styles.tooltip} >Usuario</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i><MdOutlineBuild /></i>
-                                <span className={styles.linksName}>Configuracoes</span>
-                            </a>
-                            <span className={styles.tooltip} >Configuracoes</span>
+                            <span className={styles.tooltip} >Canais Discord</span>
                         </li>
                     </ul>
                     <div className={styles.profileContent}>
