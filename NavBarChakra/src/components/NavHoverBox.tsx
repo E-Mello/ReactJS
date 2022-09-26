@@ -4,18 +4,26 @@ import {
     Text,
     Icon
 } from "@chakra-ui/react";
+import { IconBaseProps } from "react-icons";
+import { IconType } from "react-icons/lib";
 
-export function NavHoverBox({ icon, title, description }) {
+interface NavHoverBox {
+    icon: IconType;
+    title: string;
+    description: string;
+}
+
+export function NavHoverBox({ icon, title, description }: NavHoverBox) {
     return (
         <>
             <Flex
                 pos="absolute"
-                mt="calc(100px - 7.5px)"
-                ml="-10px"
+                mt="calc(6.25rem - 0.46875rem)"
+                ml="-0.625rem"
                 w={0}
                 h={0}
-                borderTop="10px solid transparent"
-                borderRight="10px solid #82AAAD"
+                borderTop="0.625rem solid transparent"
+                borderRight="0.625rem solid #82AAAD"
             />
             <Flex
                 h={200}
@@ -24,7 +32,7 @@ export function NavHoverBox({ icon, title, description }) {
                 alignItems="center"
                 justify="center"
                 backgroundColor="#82AAAD"
-                borderRadius="10px"
+                borderRadius="0.625rem"
                 color="#fff"
                 textAlign="center"
             >

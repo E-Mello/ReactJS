@@ -7,10 +7,18 @@ import {
     MenuButton,
     MenuList
 } from "@chakra-ui/react";
+import { IconBaseProps, IconType } from "react-icons/lib";
 
 import { NavHoverBox } from "./NavHoverBox";
+interface NavItem {
+    navSize: string;
+    title: string;
+    icon: IconType;
+    active: boolean;
+    description: string;
+}
 
-export function NavItem({ navSize, title, icon, active, description }) {
+export function NavItem({ navSize, title, icon, active, description }: NavItem) {
     return (
         <Flex
             mt={30}
@@ -24,7 +32,7 @@ export function NavItem({ navSize, title, icon, active, description }) {
                     p={3}
                     borderRadius={8}
                     _hover={{ textDecor: 'none', backgroundColor: '#AEC8CA' }}
-                    w={navSize == "large" && "100%"}
+                    w={navSize == "large" && "100"}
                 >
                     <MenuButton w={"100%"}>
                         <Flex>
