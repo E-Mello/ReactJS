@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Flex } from '@chakra-ui/react'
 
-import { Sidebar } from './components/Sidebar'
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { RegisterDevice } from './pages/RegisterDevice'
 import { Dashboard } from './pages/Dashboard'
